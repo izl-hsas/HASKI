@@ -184,12 +184,14 @@
 					</svg>
 				</div>
 				<div class="info">
-					<a href="#" id="feedback" onclick="load(this, 'feedback_loader.php')"><?php echo $translation["FeedBack"]; ?></a>
+					<!--<a href="#" id="feedback" onclick="load(this, 'feedback_loader.php')"><?php echo $translation["FeedBack"]; ?></a>-->
+					<a href="mailto:digitalelehre@hs-albsig.de?subject=FeedbackHASKI" id="feedback"><?php echo $translation["FeedBack"]; ?></a>
+	
 					<a href="logout"><?php echo $translation["SignOut"]; ?></a>
 					<br>
 					<!-- CHANGE THIS PART TO ONCLICK EVENT TO LOAD THE PAGE IN MESSAGES PANEL.
 						DON'T FORGET TO ADD A PROPER PAGE IN VIEWS FOLDER. -->
-					<a href="dataprotection"><?php echo $translation["DataSecurity"]; ?></a>
+					<a href="dataprotection" target="_blank"><?php echo $translation["DataSecurity"]; ?></a>
 					<a href="impressum" target="_blank"><?php echo $translation["Impressum"]; ?></a>
 				</div>
 
