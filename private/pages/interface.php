@@ -214,6 +214,7 @@
 									'<select id="model-selector" onchange="OnDropdownModelSelection()">
 										<option value="gpt-4o">OpenAI GPT-4o</option>
 										<option value="gpt-4o-mini">OpenAI GPT-4o Mini</option>
+	  									<option value="o1-mini">OpenAI GPT-o1 Mini</option>
 										<option value="meta-llama-3.1-70b-instruct">meta-llama-3.1-70b-instruct</option>
 										<option value="qwen2.5-72b-instruct">Qwen 2.5 72B Instruct</option>
 									</select>';
@@ -407,6 +408,7 @@
 		switch(activeModel){
 			case('gpt-4o'):
 			case('gpt-4o-mini'):
+			case('o1-mini'):
 				streamAPI = "api/stream-api";
 				break;
 
