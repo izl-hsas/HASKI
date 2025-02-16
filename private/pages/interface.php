@@ -489,6 +489,11 @@
 			if(activeModel === 'mistral-large-instruct' && messageObject.role === 'system'){
 				messageObject.role = 'user';
 			}
+			
+			if(activeModel === 'o1-mini'){
+				messageObject.role = 'user';
+				requestObject.stream = false;
+			}
 
 			messageObject.content = messageElement.querySelector(".message-text").textContent;
 			requestObject.messages.push(messageObject);
